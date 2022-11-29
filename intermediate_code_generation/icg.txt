@@ -1,0 +1,26 @@
+a = 0
+L0:
+t0 = a < 10
+ifFalse t0 goto L1
+f = t0
+t1 = a - 1
+a = t1
+t2 = a + 1
+a = t2
+goto L0
+L1:
+d = t2
+t3 = 2 + 3
+t4 = 1 * t3
+t5 = t4 / 4
+t6 = 5 - 6
+t7 = t5 + t6
+c = t7
+t8 = d > a
+ifFalse t8 goto L2
+t9 = 4
+goto L3
+L2:
+t9 = 5
+L3:
+i = t9

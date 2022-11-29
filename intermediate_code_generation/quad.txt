@@ -1,0 +1,28 @@
+	Op		Arg1		Arg2		Res
+------------------------------------------------------------------------
+	=		0		  		a
+	Label		  		  		L0
+	<		a		10		t0
+	ifFalse		t0		  		L1
+	=		t0		  		f
+	-		a		1 		t1
+	=		t1		  		a
+	+		a		1 		t2
+	=		t2		  		a
+	goto		  		  		L0
+	Label		  		  		L1
+	=		t2		  		d
+	+		2		3		t3
+	*		1		t3		t4
+	/		t4		4		t5
+	-		5		6		t6
+	+		t5		t6		t7
+	=		t7		  		c
+	>		d		a		t8
+	ifFalse		t8		  		L2
+	=		4		  		t9
+	goto		  		  		L3
+	Label		  		  		L2
+	=		5		  		t9
+	Label		  		  		L3
+	=		t9		  		i
